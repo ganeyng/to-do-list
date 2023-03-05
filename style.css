@@ -1,0 +1,96 @@
+body
+{
+	display:flex;
+	justify-content:center;
+}
+
+.container
+{
+	width:24rem;
+	/* height:20rem; */
+	border:2px solid black;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	/* justify-content:space-between; */
+	border-radius:.5rem;
+}
+
+#data
+{
+	width:16rem;
+	border:2px solid black;
+}
+
+#data::placeholder
+{
+	font-size:.75rem;
+}
+
+.color-btn
+{
+	background-color:purple;
+	color:white;
+	border:none;
+}
+
+.submit
+{
+	height:1.25rem;
+}
+
+.submit:hover
+{
+	opacity:.7;
+}
+
+.curve
+{
+	border-radius:.25rem;
+}
+
+.list
+{
+	/* border:1px solid black; */
+	width:20rem;
+	margin-top:.75rem;
+	margin-bottom:2rem;
+}
+
+.workStyle
+{
+	background-color:black;
+	color:white;
+	border-radius:.25rem;
+	margin-bottom:.5rem;
+	height:2rem;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0rem 1rem;
+}
+
+.del-btn
+{
+	/* background-color:white; */
+	width:1.5rem;
+	height:1.5rem;
+	border:none;
+	border-radius:.25rem;
+	background:url("img/del.png") no-repeat center center;
+}
+
+.del-btn:hover
+{
+	background-color:#525252;
+	transition-duration:.5s;
+}
+
+#errorMsg
+{
+	color:red;
+	font-size:.75rem;
+}
+
+
+
