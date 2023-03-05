@@ -1,5 +1,4 @@
 <?php
-// CONNECT MYSQL
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -30,21 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (!$result) {
     echo "Data insertion failed " . mysqli_error($con) . "<br>";
   }
-
-
-  // $sql = "DELETE FROM `list_info` WHERE `work` = $data";
-  // $result = mysqli_query($con, $sql);
-
-  // if ($result)
-  //   echo "Data deleted successfully";
-  // else {
-  //   $err = mysqli_error($con);
-
-  //   echo "Data deletion failed --> " . $err;
-  // }
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
   <link rel="stylesheet" href="style.css" />
-  <script src="index1.js"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -80,8 +65,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $sno += 1;
           echo '<div class="workStyle">' . $rows["work"] . '<div class="del-btn" id=' . $rows["id"] . ' name="delete"></div></div>';
         }
-
-        // <div class="list"></div>
         ?>
       </div>
     </form>
